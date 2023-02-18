@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.zuheb.com</title>
+    <style>
+        body{
+            background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/04/Blurred-Web-Backgrounds-HD-Wallpaper.jpg);
+        }
+        input{
+            font-size: 35px;
+        }
+
+        form{ 
+  
+  text-align: center;
+}
+    </style>
+
+</head>
+<body>
+    <br>
+    <br>
+    
+    <h2 style=text-align:center;color:orange>Book a Call</h2>
+    <p style="text-align: center;"><small>Book a Call Slot and our representative will call you within the selected time</small></p>
+    <hr>
+    <button style="text-align:right;" onclick="document.location='default.asp'">Schedule ad Call</button><br>
+
+
+<br>
+    <form action="#" onsubmit="Aftersubmit()">
+    
+        <br>
+        <label>Name</label>
+        <br>
+        <input type="text" id="name" >
+        <br>
+        <label>Email</label>
+        <br>
+        <input type="email" id="email">
+        <br>
+        <label>Phone</label>
+        <br>
+        <input type="number" id="number">
+        <br>
+        <label>Time For Call</label>
+        <br>
+        <input type="datetime-local" id="datetime">
+        <br><br>
+        <input type="submit" value="Get a Call">
+
+
+    
+    </form>
+    <script>
+        function Aftersubmit(){
+            const name=document.getElementById('name').value;
+            const Email=document.getElementById('email').value;
+            const Phone=document.getElementById('number').value;
+            const Time=document.getElementById('datetime').value;
+
+
+            console.log(name,Email,Phone,Time)
+            
+
+        }
+    </script>
+
+</body>
+</html
